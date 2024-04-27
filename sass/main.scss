@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none
+}
+@import "./blocks/mixin";
+@import "./blocks/variables";
+@import "./blocks/fonts";
+body{
+    @include body;
+    overflow-x: hidden;
+    @include for-tablet{
+        overflow-x: hidden;
+    }
+}
+.container{
+    @include container;
+}
+@media (max-width:768px) {
+    .container{
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+@media (max-width:558px) {
+    .container{
+        width: 475px;
+        margin: 0 auto;
+        padding: 0 5px 0 5px;
+    }
+}
+@import "./blocks/header";
+@import "./blocks/section1";
+@import "./blocks/section2";
+@import "./blocks/section3";
+@import "./blocks/section4";
+@import "./blocks/section5";
+@import "./blocks/footer";

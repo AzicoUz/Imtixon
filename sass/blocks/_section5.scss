@@ -1,0 +1,57 @@
+.section5{
+    width: 120%;
+    margin-top: 100px;
+    background: url(../../image/Mask.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 122px 250px 122px 0;
+    &__sing{
+        @include center-flex;
+        color: $white-text;
+        @include for-tablet{
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__text{
+            width: 415px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            @include for-tablet{
+            text-align: center;
+            }
+        }
+        &__buttons{
+            color: $black-text;
+            max-width: 360px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0 0 20px;
+            &__apple{
+                border-radius: 5px;
+                max-width: 160px;
+                width: 100%;
+                padding: 8px 16px;
+                background: #E5ECF4;
+                @include center-flex;
+                &__icons{
+                    font-size:30px ;
+                }
+                &__text{
+                    font-size: 10px;
+                    font-weight: 700;
+                    line-height: 14.81px;
+                }
+                &__title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
